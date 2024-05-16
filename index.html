@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Grafos</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="number" id="vertices" placeholder="Quantidade de Nós">
+            </td>
+            <td>
+                <input type="button" onclick="gerar()" value="GERAR">
+            </td>
+        </tr>
+    </table>
+
+    <table id="tabela">
+
+    </table>
+    
+    <table id="resultado" hidden>
+        <tr>
+            <td colspan="3">
+                <input type="button" onclick="calcular()" id="calcular" value="CALCULAR">
+            </td>
+        </tr>
+        <tr id="tr_resultado1">
+            <td colspan="3">
+                caminho mais curto
+            </td>
+        </tr>
+        <tr id="tr_resultado2">
+            <td>
+                nó anterior
+            </td>
+            <td>
+               destino
+            </td>
+            <td>
+               custo
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
